@@ -15,6 +15,9 @@
 -->
     
     {!! Form::model($message, ['route' => 'messages.store']) !!}
+    
+        {!! Form::label('title', 'タイトル:') !!}
+        {!! form::text('title') !!}
 
         {!! Form::label('content', 'メッセージ:') !!}
         {!! Form::text('content') !!}
